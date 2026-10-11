@@ -1,0 +1,60 @@
+{
+  "dense": {
+    "label": "dense FFN",
+    "val_loss": 1.3742,
+    "params": 169536
+  },
+  "coarse": {
+    "label": "2 big, top-1",
+    "val_loss": 1.1422,
+    "params": 243648
+  },
+  "fine_iso": {
+    "label": "8 fine, top-2",
+    "val_loss": 0.8799,
+    "params": 392256
+  },
+  "flagship": {
+    "label": "8 fine + shared",
+    "val_loss": 1.1154,
+    "params": 244800
+  },
+  "aux": {
+    "label": "aux loss (0.2)",
+    "val_loss": 1.258,
+    "params": 244800
+  },
+  "none": {
+    "label": "no balancing",
+    "val_loss": 1.1853,
+    "params": 244800
+  },
+  "mtp": {
+    "label": "flagship + MTP",
+    "val_loss": 1.0653,
+    "params": 249408,
+    "mtp_acc": 0.5071,
+    "mtp_loss": 1.5507
+  },
+  "gamma50": {
+    "label": "gamma x50",
+    "val_loss": 1.2886,
+    "params": 244800
+  },
+  "no_shared": {
+    "label": "shared removed",
+    "val_loss": 1.4086,
+    "params": 195648
+  },
+  "no_renorm": {
+    "label": "no renorm",
+    "val_loss": 1.4877,
+    "params": 244800
+  },
+  "_meta": {
+    "steps": 300,
+    "batch_size": 16,
+    "wall_seconds": 330.8,
+    "peak_rss_mb": 578.6
+  }
+}
